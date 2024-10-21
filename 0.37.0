@@ -1,0 +1,68 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting transformers
+  Downloading transformers-4.45.2-py3-none-any.whl.metadata (44 kB)
+Collecting accelerate
+  Downloading accelerate-1.0.1-py3-none-any.whl.metadata (19 kB)
+Collecting bitsandbytes
+  Downloading bitsandbytes-0.42.0-py3-none-any.whl.metadata (9.9 kB)
+Requirement already satisfied: filelock in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from transformers) (3.16.1)
+Requirement already satisfied: huggingface-hub<1.0,>=0.23.2 in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from transformers) (0.25.1)
+Collecting numpy>=1.17 (from transformers)
+  Using cached numpy-2.1.2-cp311-cp311-macosx_14_0_x86_64.whl.metadata (60 kB)
+Requirement already satisfied: packaging>=20.0 in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from transformers) (24.1)
+Requirement already satisfied: pyyaml>=5.1 in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from transformers) (6.0.2)
+Collecting regex!=2019.12.17 (from transformers)
+  Downloading regex-2024.9.11-cp311-cp311-macosx_10_9_x86_64.whl.metadata (40 kB)
+Requirement already satisfied: requests in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from transformers) (2.32.3)
+Collecting safetensors>=0.4.1 (from transformers)
+  Downloading safetensors-0.4.5-cp311-cp311-macosx_10_12_x86_64.whl.metadata (3.8 kB)
+Collecting tokenizers<0.21,>=0.20 (from transformers)
+  Downloading tokenizers-0.20.1-cp311-cp311-macosx_10_12_x86_64.whl.metadata (6.7 kB)
+Requirement already satisfied: tqdm>=4.27 in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from transformers) (4.66.5)
+Collecting psutil (from accelerate)
+  Downloading psutil-6.1.0-cp36-abi3-macosx_10_9_x86_64.whl.metadata (22 kB)
+Collecting torch>=1.10.0 (from accelerate)
+  Downloading torch-2.2.2-cp311-none-macosx_10_9_x86_64.whl.metadata (25 kB)
+Collecting scipy (from bitsandbytes)
+  Downloading scipy-1.14.1-cp311-cp311-macosx_14_0_x86_64.whl.metadata (60 kB)
+Requirement already satisfied: fsspec>=2023.5.0 in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from huggingface-hub<1.0,>=0.23.2->transformers) (2024.9.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from huggingface-hub<1.0,>=0.23.2->transformers) (4.12.2)
+Collecting sympy (from torch>=1.10.0->accelerate)
+  Downloading sympy-1.13.3-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch>=1.10.0->accelerate)
+  Downloading networkx-3.4.1-py3-none-any.whl.metadata (6.3 kB)
+Collecting jinja2 (from torch>=1.10.0->accelerate)
+  Using cached jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: charset-normalizer<4,>=2 in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from requests->transformers) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from requests->transformers) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from requests->transformers) (2.2.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/angeshprep/Library/Python/3.11/lib/python/site-packages (from requests->transformers) (2024.8.30)
+Collecting MarkupSafe>=2.0 (from jinja2->torch>=1.10.0->accelerate)
+  Using cached MarkupSafe-3.0.2-cp311-cp311-macosx_10_9_universal2.whl.metadata (4.0 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy->torch>=1.10.0->accelerate)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Downloading transformers-4.45.2-py3-none-any.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 30.7 MB/s eta 0:00:00
+Downloading accelerate-1.0.1-py3-none-any.whl (330 kB)
+Downloading bitsandbytes-0.42.0-py3-none-any.whl (105.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 105.0/105.0 MB 28.7 MB/s eta 0:00:00
+Using cached numpy-2.1.2-cp311-cp311-macosx_14_0_x86_64.whl (6.9 MB)
+Downloading regex-2024.9.11-cp311-cp311-macosx_10_9_x86_64.whl (287 kB)
+Downloading safetensors-0.4.5-cp311-cp311-macosx_10_12_x86_64.whl (392 kB)
+Downloading tokenizers-0.20.1-cp311-cp311-macosx_10_12_x86_64.whl (2.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 33.8 MB/s eta 0:00:00
+Downloading torch-2.2.2-cp311-none-macosx_10_9_x86_64.whl (150.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 150.8/150.8 MB 32.5 MB/s eta 0:00:00
+Downloading psutil-6.1.0-cp36-abi3-macosx_10_9_x86_64.whl (247 kB)
+Downloading scipy-1.14.1-cp311-cp311-macosx_14_0_x86_64.whl (25.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 25.5/25.5 MB 29.4 MB/s eta 0:00:00
+Using cached jinja2-3.1.4-py3-none-any.whl (133 kB)
+Downloading networkx-3.4.1-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 25.7 MB/s eta 0:00:00
+Downloading sympy-1.13.3-py3-none-any.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 20.5 MB/s eta 0:00:00
+Using cached MarkupSafe-3.0.2-cp311-cp311-macosx_10_9_universal2.whl (14 kB)
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 7.2 MB/s eta 0:00:00
+Installing collected packages: mpmath, sympy, safetensors, regex, psutil, numpy, networkx, MarkupSafe, scipy, jinja2, torch, tokenizers, bitsandbytes, transformers, accelerate
+Successfully installed MarkupSafe-3.0.2 accelerate-1.0.1 bitsandbytes-0.42.0 jinja2-3.1.4 mpmath-1.3.0 networkx-3.4.1 numpy-2.1.2 psutil-6.1.0 regex-2024.9.11 safetensors-0.4.5 scipy-1.14.1 sympy-1.13.3 tokenizers-0.20.1 torch-2.2.2 transformers-4.45.2
